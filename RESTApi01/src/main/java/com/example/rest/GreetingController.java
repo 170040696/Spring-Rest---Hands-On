@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.example.service.iGreetingService;
 
-@Controller
+@Controller  //Controller class 
 public class GreetingController {
 
 	@Autowired
@@ -21,7 +21,7 @@ public class GreetingController {
 		return service.greeting("Akanksha");
 	}
 	
-	@GetMapping("/greet2")
+	@GetMapping("/greet2")  
 	@ResponseBody
 	public ResponseEntity<String> generateWish2() {
 		String response= service.greeting("Yamini");
